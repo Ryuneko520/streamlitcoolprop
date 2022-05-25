@@ -15,7 +15,7 @@ st.subheader('饱和状态查询')
 # st.markdown('markdown is **_really_ cool**.')
 ref = st.selectbox(
     '请选择冷媒',
-    ('R11', 'R113', 'R114', 'R115', 'R116', 'R12', 'R123', 'R1233zd(E)', 'R1234yf',
+    ('R11', 'R113', 'R114', 'R115', 'R12', 'R123', 'R1233zd(E)', 'R1234yf',
             'R1234ze(E)', 'R1234ze(Z)', 'R124', 'R125', 'R13', 'R134a', 'R13I1', 'R14', 'R141b', 'R142b', 'R143a',
             'R152A', 'R161', 'R21', 'R218', 'R22', 'R227EA', 'R23', 'R236EA', 'R236FA', 'R245ca', 'R245fa', 'R32',
             'R365MFC', 'R40', 'R404A', 'R407C', 'R41', 'R410A', 'R507A', 'RC318', 'SES36', 'SulfurDioxide',
