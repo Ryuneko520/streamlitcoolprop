@@ -496,23 +496,23 @@ if tool_type == "压焓图":
     # print(df)
     # st.table(df)
 
-    #fname = 'h'  # 文件名，也可为.csv，当为csv时，读取代码要改为pd.read_csv,其他不变
-    #isheader = 0  # fname里的数据是否有标题，有标题isheader置为0，表示第一行当标题，无标题改为isheader = None
-    #xlabel = 'h Enthalpy [kJ/kg]'  # 横坐标标题
-    #ylabel = 'Pressure [Mpa(g)]'  # 纵坐标标题
-    #title = 'Ph'  # 总标题
+    fname = 'h'  # 文件名，也可为.csv，当为csv时，读取代码要改为pd.read_csv,其他不变
+    isheader = 0  # fname里的数据是否有标题，有标题isheader置为0，表示第一行当标题，无标题改为isheader = None
+    xlabel = 'h Enthalpy [kJ/kg]'  # 横坐标标题
+    ylabel = 'Pressure [Mpa(g)]'  # 纵坐标标题
+    title = 'Ph'  # 总标题
 
-    #fig = plt.figure()  # 初始化一张图
-    #plt.plot(h_l_list, p_list, label=ref + '(liquid)', color='dodgerblue', linestyle='--')  # 连线图,若要散点图将此句改为：plt.scatter(x,y) #散点图
-    #plt.plot(h_v_list, p_list, label=ref + '(vapor)', color='salmon',linestyle='--')
-    #plt.plot(h_l_list2, p_list2, label=ref2 + '(liquid)', color='dodgerblue')
-    #plt.plot(h_v_list2, p_list2, label=ref2 + '(vapor)', color='salmon')
+    fig = plt.figure()  # 初始化一张图
+    plt.plot(h_l_list, p_list, label=ref + '(liquid)', color='dodgerblue', linestyle='--')  # 连线图,若要散点图将此句改为：plt.scatter(x,y) #散点图
+    plt.plot(h_v_list, p_list, label=ref + '(vapor)', color='salmon',linestyle='--')
+    plt.plot(h_l_list2, p_list2, label=ref2 + '(liquid)', color='dodgerblue')
+    plt.plot(h_v_list2, p_list2, label=ref2 + '(vapor)', color='salmon')
 
-    ## plt.grid(alpha=0.5,linestyle='-.') #网格线，更好看
-    #plt.title(title, fontsize=14)  # 画总标题 fontsize为字体，下同
-    #plt.xlabel(xlabel, fontsize=14)  # 画横坐标
-    #plt.ylabel(ylabel, fontsize=14)  # 画纵坐标
-    #fig.legend(loc=1)
-    ## plt.savefig(title+'.jpg', dpi=300) #可以存到本地，高清大图。路径默认为当前路径，dpi可理解为清晰度
-    ## plt.show()
-    #st.pyplot(fig)
+    # plt.grid(alpha=0.5,linestyle='-.') #网格线，更好看
+    plt.title(title, fontsize=14)  # 画总标题 fontsize为字体，下同
+    plt.xlabel(xlabel, fontsize=14)  # 画横坐标
+    plt.ylabel(ylabel, fontsize=14)  # 画纵坐标
+    fig.legend(loc=1)
+    # plt.savefig(title+'.jpg', dpi=300) #可以存到本地，高清大图。路径默认为当前路径，dpi可理解为清晰度
+    # plt.show()
+    st.pyplot(fig)
